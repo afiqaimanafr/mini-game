@@ -5,4 +5,6 @@ export default function App() {
   return <StartGameScreen />;
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  
+});

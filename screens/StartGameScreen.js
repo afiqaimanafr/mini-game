@@ -1,10 +1,10 @@
 import React from "react";
-import { TextInput, View } from "react-native";
+import { TextInput, View, StyleSheet } from "react-native";
 import PrimaryButton from "../components/PrimaryButton";
 
 function StartGameScreen() {
   return (
-    <View>
+    <View style={styles.inputContainer}>
       <TextInput />
       <PrimaryButton>Reset</PrimaryButton>
       <PrimaryButton>Confirm</PrimaryButton>
@@ -13,3 +13,11 @@ function StartGameScreen() {
 }
 
 export default StartGameScreen;
+
+const styles = StyleSheet.create({
+  inputContainer: {
+    flex: 1,
+    marginTop: 8,
+    padding: 16,
+  },
+});
