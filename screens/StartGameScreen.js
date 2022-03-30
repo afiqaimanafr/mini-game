@@ -1,5 +1,8 @@
 import React from "react";
+import { TextInput } from "react-native";
 
-function StartGameScreen() {}
+function StartGameScreen() {
+  return;
+}
 
 export default StartGameScreen;
