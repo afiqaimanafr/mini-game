@@ -13,10 +13,10 @@ function StartGameScreen() {
         autoCorrect={false}
       />
       <View style={styles.buttonsContainer}>
-        <View>
+        <View style={styles.buttonContainer}>
           <PrimaryButton>Reset</PrimaryButton>
         </View>
-        <View>
+        <View style={styles.buttonContainer}>
           <PrimaryButton>Confirm</PrimaryButton>
         </View>
       </View>
@@ -54,5 +54,8 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {
     flexDirection: "row",
+  },
+  buttonContainer: {
+    flex: 1,
   },
 });
