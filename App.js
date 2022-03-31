@@ -8,6 +8,7 @@ export default function App() {
       <ImageBackground
         source={require("./assets/images/background.png")}
         resizeMode="cover"
+        style={styles.rootScreen}
       >
         <StartGameScreen />
       </ImageBackground>
