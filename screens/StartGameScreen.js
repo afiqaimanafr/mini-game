@@ -9,6 +9,14 @@ function StartGameScreen() {
     setEnteredNumber(enteredNumber);
   }
 
+  function confirmInputHandler(enteredNumber) {
+    const chosenNumber = parseInt(enteredNumber);
+
+    if (isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 99) {
+      return;
+    }
+  }
+
   return (
     <View style={styles.inputContainer}>
       <TextInput
@@ -25,7 +33,7 @@ function StartGameScreen() {
           <PrimaryButton>Reset</PrimaryButton>
         </View>
         <View style={styles.buttonContainer}>
-          <PrimaryButton>Confirm</PrimaryButton>
+          <PrimaryButton onPress={confirmInputHandler}>Confirm</PrimaryButton>
         </View>
       </View>
     </View>
