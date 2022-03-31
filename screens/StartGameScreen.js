@@ -5,6 +5,10 @@ import PrimaryButton from "../components/PrimaryButton";
 function StartGameScreen() {
   const [enteredNumber, setEnteredNumber] = useState("");
 
+  function numberInputHandler(enteredNumber) {
+    setEnteredNumber(enteredNumber);
+  }
+
   return (
     <View style={styles.inputContainer}>
       <TextInput
@@ -13,6 +17,8 @@ function StartGameScreen() {
         keyboardType="number-pad"
         autoCapitalize="none"
         autoCorrect={false}
+        onChangeText={numberInputHandler}
+        value={enteredNumber}
       />
       <View style={styles.buttonsContainer}>
         <View style={styles.buttonContainer}>
