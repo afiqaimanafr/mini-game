@@ -13,7 +13,7 @@ function StartGameScreen() {
     setEnteredNumber("");
   }
 
-  function confirmInputHandler(enteredNumber) {
+  function confirmInputHandler() {
     const chosenNumber = parseInt(enteredNumber);
 
     if (isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 99) {
