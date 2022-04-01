@@ -96,10 +96,7 @@ function GameScreen({ userNumber, onGameOver }) {
   if (width > 500) {
     content = (
       <>
-        <InstructionText style={styles.instructionText}>
-          Higher Or Lower?
-        </InstructionText>
-        <View>
+        <View style={styles.buttonsContainerWide}>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={nextGuessHandler.bind(this, "lower")}>
               <Ionicons name="md-remove" size={24} color="white" />
@@ -156,5 +153,9 @@ const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
     padding: 16,
+  },
+  buttonsContainerWide: {
+    flexDirection: "row",
+    alignItems: "center",
   },
 });
