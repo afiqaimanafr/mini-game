@@ -96,7 +96,7 @@ function GameScreen({ userNumber, onGameOver }) {
   return (
     <View style={styles.screen}>
       <Title>Opponent's Guess</Title>
-
+      {content}
       <View style={styles.listContainer}>
         <FlatList
           data={guessRounds}
